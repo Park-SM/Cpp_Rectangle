@@ -1,10 +1,17 @@
 #include "rectangle.h"
+using std::cout;
 
 int main() {
 
-	Rect rect(2, 3, 5, 7);
-	rect.PrintRectInfo();
+	Rect rect;
+	Loop_InputRectData(rect);
 
+	cout << "\nPlease wait..";
+	Sleep(1000);
+	system("cls");
+
+	rect.PrintRectInfo();
+	rect.DrawRect();
 
 	system("pause");
 	return 0;

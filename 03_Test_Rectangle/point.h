@@ -9,10 +9,14 @@ private:
 	int x;
 	int y;
 public:
-	Point(int uX, int uY);
+	Point();
 	int GetX() const;
 	int GetY() const;
+	int SetXY(int uX, int uY);
 	void PrintPnt() const;
+	~Point();
 };
+
+void Loop_InputPntData(Point &pnt);
 
 #endif
